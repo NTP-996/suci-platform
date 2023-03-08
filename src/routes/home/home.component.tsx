@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "../../ColorModeSwitcher";
 import { Logo } from "../../Logo";
+import Footer from "../../components/footer/footer.component";
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
           </VStack>
         </Grid>
       </Box>
+      <Footer />
     </ChakraProvider>
   );
 };
