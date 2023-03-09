@@ -1,37 +1,5 @@
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
-// import {
-//   Breadcrumb,
-//   BreadcrumbItem,
-//   BreadcrumbLink,
-//   BreadcrumbSeparator,
-// } from "@chakra-ui/react";
-
-// const Navigation = () => {
-//   return (
-//     <Fragment>
-//       <Breadcrumb>
-//         <BreadcrumbItem>
-//           <BreadcrumbLink as={Link} to="/">
-//             Home
-//           </BreadcrumbLink>
-//         </BreadcrumbItem>
-//         <BreadcrumbItem>
-//           <BreadcrumbLink as={Link} to="/event">
-//             Event
-//           </BreadcrumbLink>
-//         </BreadcrumbItem>
-//         <BreadcrumbItem isCurrentPage>
-//           <BreadcrumbLink>Contact</BreadcrumbLink>
-//         </BreadcrumbItem>
-//       </Breadcrumb>
-//       <Outlet />
-//     </Fragment>
-//   );
-// };
-
-// export default Navigation;
-
 import {
   Box,
   Flex,
@@ -48,6 +16,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  // Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -99,8 +68,14 @@ const Navigation = () => {
                 fontFamily={"heading"}
                 color={useColorModeValue("gray.800", "white")}
               >
-                Logo
+                SUCI
               </Text>
+              {/* <Image
+                align="center"
+                fit="fill"
+                src="../../../public/SUCI-white.png"
+                alt="Logo"
+              /> */}
             </Link>
 
             <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -316,12 +291,12 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: "Explore Suci Events",
-        subLabel: "Trending Design to inspire you",
+        subLabel: "Join the Hackathon to learn",
         href: "/event",
       },
       {
         label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        subLabel: "Up-and-coming Events",
         href: "#",
       },
     ],
@@ -331,7 +306,7 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: "Job Board",
-        subLabel: "Find your dream design job",
+        subLabel: "Find your dream blockchain job",
         href: "#",
       },
       {
