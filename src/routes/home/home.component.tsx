@@ -9,23 +9,24 @@ import {
   Grid,
   theme,
 } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "../../ColorModeSwitcher";
+// import { ColorModeSwitcher } from "../../ColorModeSwitcher";
 import { Logo } from "../../Logo";
-import Footer from "../../components/footer/footer.component";
+import Hero from "../../components/hero/hero.componenet";
 
 const Home = () => {
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
+    // <ChakraProvider theme={theme}>
+    <Box textAlign="center" fontSize="xl">
+      <Grid minH="100vh" p={3}>
+        {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
+        {/* <VStack spacing={8}> */}
+        {/* <Logo h="40vmin" pointerEvents="none" />
             <Text>
               Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Text>Home</Text>
-            <Link
+            </Text> */}
+        {/* <Text>Home</Text> */}
+        <Hero />
+        {/* <Link
               color="teal.500"
               href="https://chakra-ui.com"
               fontSize="2xl"
@@ -33,12 +34,12 @@ const Home = () => {
               rel="noopener noreferrer"
             >
               Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
-      <Footer />
-    </ChakraProvider>
+            </Link> */}
+        {/* </VStack> */}
+      </Grid>
+    </Box>
+    // <Footer />
+    // </ChakraProvider>
   );
 };
 
